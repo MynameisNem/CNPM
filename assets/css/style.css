@@ -1,0 +1,496 @@
+/* 
+1. TỪ ngoài và trong
+2. TỪ trên xuống dưới 
+3. Tổng quan chi tiết 
+*/
+
+/* 
+1. Vị trí
+2. Kích thước ( width, height )
+3. Màu sắc
+4. Kiểu dáng ( kiểu chữ, hình tròn, hình vuông, ... ) */
+
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-second {
+    width: 50%;
+}
+
+.col-third {
+    width: calc(100% / 3); /* có nhiều cách để căn */
+    /* width: 33.33333%;  đây cũng là 1 cách */
+    padding: 0 8px;
+    margin-bottom: 48px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px!important;
+}
+
+.mt-16 {
+    margin-top: 16px!important;
+}
+
+.fl-right {
+    float: right !important;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+    display: inline-block;
+    border: none;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.clear-float {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+#main {
+
+}
+
+/* Chỉnh sửa phần tử trong header */
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* Giá trị độ sâu ( cao thấp ) */
+}   
+
+    /* Chỉnh sửa Nav */
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+    color: white;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+/* #nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+#nav .subnav a {
+    color: #000;
+    line-height: 38px;
+    min-width: 160px;
+    padding: 0 12px;
+}
+
+#nav .subnav li {
+    list-style: none;
+}
+
+#nav li:hover .subnav {
+    display: block;
+} */
+
+#nav .nav-down-button {
+    /* icon mũi tên chỉ xuống */
+    font-size: 12px;
+}
+    /* Hết phần chỉnh sửa Nav */
+
+    /* Chỉnh sửa search button */
+/* #header .header-search {
+    float: right;
+}
+
+#header .search-icon {
+    color: #fff;
+    line-height: 46px;
+    padding: 0 23px;
+}
+
+#header .search-icon:hover {
+    background-color: #f44336;
+    display: block;
+    cursor: pointer;
+} */
+    /* Hết phần chỉnh sửa search button */
+/* Hết phần chỉnh sửa header */
+
+/* Bắt đầu chỉnh sửa slider */
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider.png') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    color: #000;
+    position: absolute;
+    bottom: 450px;
+    text-align: center;
+    width: 100%; /* đây là cách ngắn nhất trong trường hợp này */
+
+    /* có nhiều cách để căn giữa, nên dùng cách nào ngắn nhất
+    dễ hiểu nhất và tiện nhất */
+    /* left: 50%;
+    transform: translateX(-50%); */
+    /* left: 0;
+    right: 0; */
+}
+
+#slider .text-heading {
+    font-weight: 400;
+    font-size: 100px;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+#slider .text-desciption {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+/* Hết phần chỉnh sửa slider */
+
+/* Bắt đầu chỉnh sửa content */
+#content {
+
+}
+
+    /* Chỉnh sửa content About */
+#content .text-about {
+    padding: 64px 16px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+
+#content .text-about-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+#content .text-sub-heading {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+        /* Chỉnh sửa ảnh members */
+#content .members-list {
+    margin-top: 47px;
+}
+
+#content .band-members {
+    float: left;
+    /* width: calc(100% /3);có nhiều cách để căn */
+    width: 33.33333%;  /* đây cũng là 1 cách */
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#content .member-img {
+    width: 154px;
+    border-radius: 4px;
+}
+        /* Hết phần chỉnh sửa ảnh members */
+    /* Hết phần chỉnh sửa About */
+
+    /* Chỉnh sửa Tour Dates */
+        /* Chỉnh sửa phần Tickets List */
+        /* Hết phần chỉnh sửa phần Tickets List */
+
+.places-list {
+    padding: 32px 8px;
+    margin-left: -16px;
+    margin-right: -16px;
+
+}
+
+.place-item {
+    float: left;
+    width: calc(100% / 3);
+    padding:0 8px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    margin-bottom: 48px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    padding: 16px;
+    background-color: #fff;
+}
+
+.place-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time {
+    color: #757575;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.place-description {
+    margin-bottom: 15px;
+}
+
+.buy-ticket-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+    padding: 9px 16px;
+}
+
+.buy-ticket-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+    /* Hết phần chỉnh sửa Tour Dates */
+
+/* Hết phần chỉnh sửa Content */
+
+/* Chỉnh sửa Footer */
+#footer {
+
+}
+/* Hết phần chỉnh sửa Footer */
+
+/* Chỉnh sửa Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0 , 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 100px);
+    min-height: 200px;
+    position: relative;
+}
+
+.modal-close:hover {
+    opacity: 0.8;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 14px 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-header {
+    background-color: #009688;
+    color: #fff;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.modal-bag-icon {
+    margin-right: 15px;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 8px;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    margin-bottom: 25px ;
+}
+
+#modal-buy-ticket-btn {
+    background-color: #009688;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#modal-buy-ticket-btn:hover {
+    opacity: 0.7;
+}
+
+.modal-footer {
+    text-align: right;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    padding: 16px;
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
+
+/* 
+1 kiểu khác của button close, giống web gốc nhưng nằm ở góc dưới bên tay trái
+.modal-footer {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    padding: 16px;
+}
+
+.modal-help {
+    float: right;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
+
+.modal-close {
+    background-color: #f44336;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.modal-close:hover {
+    color: #000;
+    background-color: #ccc;
+} */
