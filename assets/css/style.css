@@ -83,7 +83,7 @@ html {
     color: #fff;
     background-color: #000;
     padding: 8px 16px;
-    display: inline-block;
+    display: block;
     border: none;
 }
 
@@ -298,7 +298,7 @@ html {
         /* Chỉnh sửa phần Tickets List */
         /* Hết phần chỉnh sửa phần Tickets List */
 
-.places-list {
+/* .places-list {
     padding: 32px 8px;
     margin-left: -16px;
     margin-right: -16px;
@@ -341,20 +341,27 @@ html {
 
 .place-description {
     margin-bottom: 15px;
+} */
+.SQL-name {
+    margin-left: 120px;
+    font-size: 60px;
 }
 
-.buy-ticket-btn {
+.SQL-paragraph {
+    margin-left: 50px;
+}
+
+.js-SQL-event {
     text-decoration: none;
     color: #fff;
     background-color: #000;
-    display: inline-block;
+    display: block;
+    margin-top: 10px;
     padding: 9px 16px;
+    margin-left: 120px;
 }
 
-.buy-ticket-btn:hover {
-    color: #000;
-    background-color: #ccc;
-}
+
     /* Hết phần chỉnh sửa Tour Dates */
 
 /* Hết phần chỉnh sửa Content */
