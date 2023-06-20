@@ -1,0 +1,26 @@
+    // code responsive mobile
+// var header = document.getElementById('header');
+// var mobileMenu = document.getElementById('mobile-menu-js');
+// var headerHeight = header.clientHeight;
+
+    // Bật tắt mobile menu responsive
+// mobileMenu.onclick = function() {
+//     var isClosed = header.clientHeight === headerHeight;
+//     if (isClosed) {
+//         header.style.height = 'auto';
+//     }
+
+//     else {
+//         header.style.height = null;
+//     }
+// }
+
+    // Tự động tắt menu khi chọn phần tử bên trong menu
+// var menuItems = document.querySelectorAll('#nav li a[href *= "#"]');
+// for (var i = 0; i < menuItems.length; i++)
+// {
+//     var menuItem = menuItems[i];
+//     menuItem.onclick = function() {
+//         header.style.height = null;
+//     }
+// }

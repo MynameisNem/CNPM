@@ -159,20 +159,6 @@ html {
     background-color: #ccc;
 }
 
-/* #header .search-icon {
-    color: #fff;
-    line-height: 46px;
-    padding: 0 23px;
-}
-
-#header .search-icon:hover {
-    background-color: #f44336;
-    display: block;
-    cursor: pointer;
-} */
-    /* Hết phần chỉnh sửa search button */
-/* Hết phần chỉnh sửa header */
-
 /* Bắt đầu chỉnh sửa slider */
 #slider {
     position: relative;
@@ -247,29 +233,6 @@ html {
     text-align: justify;
     margin-bottom: 40px;
 }
-
-        /* Chỉnh sửa ảnh members */
-#content .members-list {
-    margin-top: 47px;
-}
-
-#content .band-members {
-    float: left;
-    /* width: calc(100% /3);có nhiều cách để căn */
-    width: 33.33333%;  /* đây cũng là 1 cách */
-    text-align: center;
-}
-
-#content .member-name {
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-
-#content .member-img {
-    width: 154px;
-    border-radius: 4px;
-}
-        /* Hết phần chỉnh sửa ảnh members */
     /* Hết phần chỉnh sửa About */
 
     /* Chỉnh sửa Tour Dates */
@@ -308,11 +271,11 @@ html {
     font-weight: 600;
 }
 
-.place-time {
+/* .place-time {
     color: #757575;
     margin-top: 15px;
     margin-bottom: 15px;
-}
+} */
 
 .place-description {
     margin-bottom: 15px;
@@ -331,24 +294,19 @@ html {
     background-color: #ccc;
 }
     /* Hết phần chỉnh sửa Tour Dates */
-
-    /* Chỉnh sửa Map Section */
-.map-section > .map-img {
-    width: 100%;
-}
-    /* Hết phần chỉnh sửa Map Section */
 /* Hết phần chỉnh sửa Content */
 
 /* Chỉnh sửa Footer */
 #footer {
     padding: 64px 16px;
     text-align: center;
+    background-color: #000;
 }
 
 #footer .socials-list a {
     text-decoration: none;
     font-size: 24px;
-    color: rgba(0, 0, 0, 0.6);
+    color: #fff;
 }
 
 #footer .copyright a:hover,
@@ -361,11 +319,11 @@ html {
     margin-bottom: 15px;
     font-size: 15px;
     font-family: 'Lato', sans-serif;
-    color: rgba(0, 0, 0, 0.6);
+    color: #fff;
 }
 
 #footer .copyright a {
-    color: rgba(0, 0, 0, 0.6);
+    color: #fff;
 }
 /* Hết phần chỉnh sửa Footer */
 
@@ -417,10 +375,6 @@ html {
     font-size: 30px;
     letter-spacing: 5px;
     font-family: 'Segoe UI', Arial, sans-serif;
-}
-
-.modal-bag-icon {
-    margin-right: 15px;
 }
 
 .modal-body {

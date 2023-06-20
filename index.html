@@ -16,13 +16,11 @@
             <ul id="nav">
                 <li><a href="#">Học SQl</a></li>
                 <li><a href="#Course">Các khóa học</a></li>
-                <li><button class="btn">Đăng nhập</button></li>
-                <li><button class="btn">Đăng xuất</button></li>
+                <li><button class="btn login-event">Đăng nhập</button></li>
+                <li><button class="btn signup-event">Đăng ký</button></li>
             </ul>
             <!-- End NAV -->
             
-            <!-- Begin Search Button -->
-            <!-- End Search Button -->
         </div>
 
         <div id="slider">
@@ -46,7 +44,7 @@
                                 <div class="place-body">
                                     <h3 class="place-name">Các hàm và biến trong SQL</h3>
                                     <p class="place-description">Đây là các bài học về cách sử dụng các hàm và biến trong SQL</p>
-                                    <button class="btn js-buy-ticket-event">Buy Tickets</button>
+                                    <button class="btn">Buy Tickets</button>
                                 </div>
                             </div>
     
@@ -55,7 +53,7 @@
                                 <div class="place-body">
                                     <h3 class="place-name">Các keywords trong SQL</h3>
                                     <p class="place-description">Đây là các bài học về các keywords quan trọng trong SQL</p>
-                                    <button class="btn js-buy-ticket-event">Buy Tickets</button>
+                                    <button class="btn">Buy Tickets</button>
                                 </div>
                             </div>
                         </div>
@@ -72,11 +70,11 @@
                     <div class="col col-second contact-information">
                         <p>
                             <i class="ti-location-pin"></i>
-                            Chicago, US
+                            VietNam, VN
                         </p>  
                         <p>
                             <i class="ti-mobile"></i>
-                            Phone: +00 151515
+                            Phone: +12345678
                         </p>
                         <p>
                             <i class="ti-email"></i>
@@ -106,12 +104,6 @@
             </div>
             <!-- End Contact -->
             
-            <!-- Begin Map Section -->
-            <div class="map-section">
-                <img src="./assets/img/linhtinh.jpg" alt="Map" class="map-img">
-            </div>
-
-            <!-- End Map Section -->
         </div>
 
         <div id="footer">
@@ -129,6 +121,7 @@
     </div>
 
     <!-- Begin modal -->
+        <!-- Login Form -->
     <div class="modal js-modal">
         <div class="modal-container js-modal-container">
             <div class="modal-close js-modal-close">
@@ -136,26 +129,22 @@
             </div>
 
             <header class="modal-header">
-                <i class="modal-bag-icon ti-bag"></i>
-                Tickets
+                Đăng nhập
             </header>
 
             <div class="modal-body">
-                <label for="How many?" class="modal-label">
-                    <i class="modal-cart ti-shopping-cart"></i>
-                    Tickets, $15 per person
+                <label for="Email" class="modal-label">
+                    Nhập Email
                 </label>
-                <input id="How many?" type="text" class="modal-input" placeholder="How many?">
+                <input id="Email" type="email" class="modal-input" placeholder="Email">
 
                 <label for="Enter Email" class="modal-label">
-                    <i class="modal-user ti-user"></i>
-                    Send To
+                    Nhập mật khẩu
                 </label>
-                <input id="Enter Email" type="email" class="modal-input" placeholder="Enter Email">
+                <input id="Enter Email" type="password" class="modal-input" placeholder="Mật khẩu">
 
                 <button id="modal-buy-ticket-btn">
-                    Pay
-                    <i class="modal-check ti-check"></i>
+                    Đăng nhập
                 </button>
             </div>
 
@@ -164,10 +153,54 @@
                     Close
                     <i class="modal-clsoe-icon ti-close"></i>
                 </div> -->
-                <p class="modal-help">Need <a href="">help?</a></p>
+                <p class="modal-help">Bạn chưa có tài khoản hoặc gặp vấn đề về đăng nhập ? <a href="">Đăng ký</a>/<a href="">Quên mật khẩu</a></p>
             </footer>
         </div>
     </div>
+        <!-- End Login Form -->
+        <!-- Signup Form -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="modal-close-icon ti-close"></i>
+            </div>
+
+            <header class="modal-header">
+                Đăng ký
+            </header>
+
+            <div class="modal-body">
+                <label for="Email" class="modal-label">
+                    Nhập Email
+                </label>
+                <input id="new-email" type="email" class="modal-input" placeholder="Email">
+                <label for="Phone Number" class="modal-label">
+                    Nhập SDT
+                </label>
+                <input id="new-phone-number" type="number" class="modal-input" placeholder="SDT">
+                <label for="Enter Password" class="modal-label">
+                    Nhập mật khẩu
+                </label>
+                <input id="new-password" type="password" class="modal-input" placeholder="Mật khẩu">
+                <label for="">
+                    Nhập lại mật khẩu
+                </label>
+                <input id="re-enter-password" type="password" class="modal-input" placeholder="password">
+
+                <button id="modal-buy-ticket-btn">
+                    Đăng ký
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <!-- <div class="modal-close">
+                    Close
+                    <i class="modal-clsoe-icon ti-close"></i>
+                </div> -->
+            </footer>
+        </div>
+    </div>
+        <!-- End Signup Form -->
     <!-- End modal -->
 
     <!-- Begin js code event -->

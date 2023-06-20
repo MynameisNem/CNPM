@@ -1,59 +1,76 @@
-const buyBtns = document.querySelectorAll('.js-buy-ticket-event')
+const logBtns = document.querySelectorAll('.login-event')
+const sigBtns = document.querySelectorAll('.signup-event')
 const modal = document.querySelector('.js-modal')
 const modalClose = document.querySelector('.js-modal-close')
 const modalContainer = document.querySelector('.js-modal-container')
 
-    // Hàm hiển thị menu mua vé (thêm class open vào modal)
-function showBuyTicket() {
+// Form Login
+    // Hàm hiển thị form login (thêm class open vào modal)
+function showFormLogin() 
+{
     modal.classList.add('open')
 }
 
-    //  Lặp event nghe lại hành động click tại 3 button Buy Ticket
-for ( const buyBtn of buyBtns) {
-    buyBtn.addEventListener('click', showBuyTicket)
+    // Lặp event nghe lại hành động click tại button Đăng nhập
+for ( const logBtn of logBtns) 
+{
+    logBtn.addEventListener('click', showFormLogin)
 }
         
-// Hàm tắt menu mua vé (gỡ class open của modal)
-function hideBuyTicket() {
+// Hàm tắt form login (gỡ class open của modal)
+function hideFormLogin() 
+{
     modal.classList.remove('open')
 }
 // Nghe lại hành động click vào close
-modalClose.addEventListener('click', hideBuyTicket)
+modalClose.addEventListener('click', hideFormLogin)
 
-    // Tắt menu mua vé bằng cách ấn ra khoảng không bên ngoài
+    // Tắt form login bằng cách ấn ra khoảng không bên ngoài
     // Nếu chỉ dùng modal thì sẽ bị trường hợp ấn vào thẻ con modalContainer (nội dung không cần ẩn khi bấm)
     // sẽ bị ẩn đi do cả thẻ cha cũng nhận được event click 
     // nên phải thêm event stopPropagation (ngăn sự kiện nổi bọt, giống như loại trừ nội dung)
-modal.addEventListener('click', hideBuyTicket)
+modal.addEventListener('click', hideFormLogin)
     // Ngăn sự kiện nổi bọt đến modalContainer thì dừng (hoặc hiểu là nếu bấm vào modalContainer thì event click ẩn sẽ bị dừng 
-    // do được loại trừ bởi stopPropagation, còn nếu bấm ra ngoài modalContainer thì thực hiện ẩn menu mua vé)
-modalContainer.addEventListener('click', function (event) {
+    // do được loại trừ bởi stopPropagation, còn nếu bấm ra ngoài modalContainer thì thực hiện ẩn form login)
+modalContainer.addEventListener('click', 
+    function (event) 
+    {
     event.stopPropagation('')
-})
+    }
+)
+// End Form Login
 
-    // code responsive mobile
-// var header = document.getElementById('header');
-// var mobileMenu = document.getElementById('mobile-menu-js');
-// var headerHeight = header.clientHeight;
+// Form Signup
+function showFormSignup() 
+{
+    modal.classList.add('open')
+}
 
-    // Bật tắt mobile menu responsive
-// mobileMenu.onclick = function() {
-//     var isClosed = header.clientHeight === headerHeight;
-//     if (isClosed) {
-//         header.style.height = 'auto';
-//     }
+    // Lặp event nghe lại hành động click tại button Đăng ký
+for ( const sigBtn of sigBtns) 
+{
+    sigBtn.addEventListener('click', showFormSignup)
+}
+        
+// Hàm tắt form login (gỡ class open của modal)
+function hideFormSignup() 
+{
+    modal.classList.remove('open')
+}
+// Nghe lại hành động click vào close
+modalClose.addEventListener('click', hideFormSignup)
 
-//     else {
-//         header.style.height = null;
-//     }
-// }
-
-    // Tự động tắt menu khi chọn phần tử bên trong menu
-// var menuItems = document.querySelectorAll('#nav li a[href *= "#"]');
-// for (var i = 0; i < menuItems.length; i++)
-// {
-//     var menuItem = menuItems[i];
-//     menuItem.onclick = function() {
-//         header.style.height = null;
-//     }
-// }
+    // Tắt form login bằng cách ấn ra khoảng không bên ngoài
+    // Nếu chỉ dùng modal thì sẽ bị trường hợp ấn vào thẻ con modalContainer (nội dung không cần ẩn khi bấm)
+    // sẽ bị ẩn đi do cả thẻ cha cũng nhận được event click 
+    // nên phải thêm event stopPropagation (ngăn sự kiện nổi bọt, giống như loại trừ nội dung)
+modal.addEventListener('click', hideFormSignup)
+    // Ngăn sự kiện nổi bọt đến modalContainer thì dừng (hoặc hiểu là nếu bấm vào modalContainer thì event click ẩn sẽ bị dừng 
+    // do được loại trừ bởi stopPropagation, còn nếu bấm ra ngoài modalContainer thì thực hiện ẩn form login)
+modalContainer.addEventListener('click', 
+    function (event) 
+    {
+    event.stopPropagation('')
+    }
+)
+// End Form Signup
