@@ -83,7 +83,7 @@ html {
     color: #fff;
     background-color: #000;
     padding: 8px 16px;
-    display: block;
+    display: inline-block;
     border: none;
 }
 
@@ -136,6 +136,11 @@ html {
     color: white;
 }
 
+#nav > li > button {
+    text-transform: uppercase;
+    color: white;
+}
+
 #nav li a {
     text-decoration: none;
     line-height: 46px;
@@ -143,45 +148,27 @@ html {
     display: block;
 }
 
+#nav li button {
+    text-decoration: none;
+    line-height: 43px;
+    padding: 0 24px;
+    padding-top: 3px;
+    display: block;
+    background-color: #000;
+    border: none;
+}
+
 #nav > li:hover > a {
     color: #000;
     background-color: #ccc;
 }
 
-/* #nav .subnav {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
-}
-
-#nav .subnav a {
+#nav > li:hover > button {
     color: #000;
-    line-height: 38px;
-    min-width: 160px;
-    padding: 0 12px;
+    background-color: #ccc;
 }
 
-#nav .subnav li {
-    list-style: none;
-}
-
-#nav li:hover .subnav {
-    display: block;
-} */
-
-#nav .nav-down-button {
-    /* icon mũi tên chỉ xuống */
-    font-size: 12px;
-}
-    /* Hết phần chỉnh sửa Nav */
-
-    /* Chỉnh sửa search button */
-/* #header .header-search {
-    float: right;
-}
-
-#header .search-icon {
+/* #header .search-icon {
     color: #fff;
     line-height: 46px;
     padding: 0 23px;
@@ -298,7 +285,7 @@ html {
         /* Chỉnh sửa phần Tickets List */
         /* Hết phần chỉnh sửa phần Tickets List */
 
-/* .places-list {
+.places-list {
     padding: 32px 8px;
     margin-left: -16px;
     margin-right: -16px;
@@ -341,34 +328,51 @@ html {
 
 .place-description {
     margin-bottom: 15px;
-} */
-.SQL-name {
-    margin-left: 120px;
-    font-size: 60px;
 }
 
-.SQL-paragraph {
-    margin-left: 50px;
-}
-
-.js-SQL-event {
+.buy-ticket-btn {
     text-decoration: none;
     color: #fff;
     background-color: #000;
-    display: block;
-    margin-top: 10px;
+    display: inline-block;
     padding: 9px 16px;
-    margin-left: 120px;
 }
 
-
+.buy-ticket-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
     /* Hết phần chỉnh sửa Tour Dates */
 
 /* Hết phần chỉnh sửa Content */
 
 /* Chỉnh sửa Footer */
 #footer {
+    padding: 64px 16px;
+    text-align: center;
+}
 
+#footer .socials-list a {
+    text-decoration: none;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    opacity: 0.5;
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);
 }
 /* Hết phần chỉnh sửa Footer */
 
